@@ -1,9 +1,9 @@
-from flask import Config, Flask
+from flask import  Flask
 from flask_jwt_extended import JWTManager
 from flask_restful import Api
-from memo import MemoListResource
-
-from user import UserLoginResource, UserLogoutResource, UserRegisterResource, jwt_blacklist
+from resource.memo import MemoListResource
+from config import Config
+from resource.user import UserLoginResource, UserLogoutResource, UserRegisterResource, jwt_blacklist
 
 
 
